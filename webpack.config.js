@@ -10,7 +10,8 @@ module.exports = {
     module:{
         rules:[
             {test:/\.scss$/,loaders:'style-loader!css-loader!sass-loader'},
-            {test:/\.html$/,loaders:'html-loader'}
+            {test:/\.html$/,loaders:'html-loader'},
+            {test:/\.jpeg$/,loaders:'url-loader'}
         ]
     }
 };

@@ -1,0 +1,115 @@
+$bg-color: #AEDAA6;
+$title-color: #5F6061;
+$subtitle-color: #BCB6B3;
+$border-color: #F9F9F9;
+$btn-border-color: #EFEFEF;
+$header-color: #ADB4B7;
+$main-color: #837878;
+$main-font: 'Arial';
+
+html, body, div {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bg-color;
+  font-family: $main-font;
+}
+
+.box {
+  width: 40.8em;
+  height: 23.5em;
+  background: #fff;
+  box-shadow: 0 0 30px #999;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.6%;
+  border-bottom: 1px solid $border-color;
+  color: $header-color;
+  height: 4%;
+  a {
+    text-decoration: none;
+    color: $header-color;
+    span {
+      letter-spacing: 1px;
+      font-size: 0.7em;
+      text-transform: uppercase;
+      line-height: 1.5em;
+    }
+  }
+  a:hover{
+    color:$bg-color;
+  }
+}
+
+main {
+  width: 100%;
+  height: 86.8%;
+  display: flex;
+}
+
+.picture {
+  flex-basis: 42%;
+  height: 100%;
+  border-right: 1px solid $border-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    width:100%;
+  }
+}
+
+.item {
+  flex-basis: 47%;
+  padding: 5% 5.5%;
+  .title {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    line-height: 2.4em;
+    height: 2em;
+    color: $title-color;
+  }
+  .subtitle {
+    font-size: 0.7em;
+    color: $subtitle-color;
+    text-transform: uppercase;
+  }
+  .price {
+    font-size: 1.5em;
+    color: $title-color;
+    line-height: 2.6em;
+  }
+  .details {
+    font-size: 0.8em;
+    color: $subtitle-color;
+    line-height: 1.6em;
+  }
+  .btn {
+    border: 1px solid $btn-border-color;
+    background: #fff;
+    height: 2.9em;
+    width: 11.2em;
+    padding: 0.5em 1em;
+    margin-top: 2.2em;
+    margin-right: 0.5em;
+    text-transform: uppercase;
+    color: $main-color;
+    transition: .5s ease;
+  }
+  .btn:hover {
+    color: $bg-color;
+  }
+}
+
